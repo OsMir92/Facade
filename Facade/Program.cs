@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace Facade
 {
@@ -7,7 +6,18 @@ namespace Facade
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Mortgage mortgage = new Mortgage();
+            // Evalua eligibilidad del cliente
+            Customer customer = new Customer("Anna Montenegro");
+
+            bool eligible = mortgage.IsEligible(customer, 125000);
+
+            Console.WriteLine("\nPrestamo para: " + customer.Name +
+                ", ha sido " + (eligible ? "Approvado" : "Rechazado"));
+            
+            Console.ReadKey();
         }
+
+
     }
 }
