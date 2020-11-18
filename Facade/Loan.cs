@@ -5,7 +5,7 @@ namespace Facade
     {
         public bool HasNoBadLoans(Customer customer)
         {
-            Console.WriteLine("Evaluando prestamos de " + customer.Name);
+            Console.WriteLine("Evaluando préstamos de " + customer.Name);
             return true;
         }
     }

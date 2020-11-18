@@ -10,7 +10,7 @@ namespace Facade
 
         public bool IsEligible(Customer customer, int amount)
         {
-            Console.WriteLine("{0} aplica para un prestamo de {1:C}\n",
+            Console.WriteLine("{0} aplica para un préstamo de {1:C}\n",
               customer.Name, amount);   //{1:C} ':C' da al int formato monetario(Currency)
 
             bool eligible = true;

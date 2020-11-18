@@ -12,8 +12,8 @@ namespace Facade
 
             bool eligible = mortgage.IsEligible(customer, 125000);
 
-            Console.WriteLine("\nPrestamo para: " + customer.Name +
-                ", ha sido " + (eligible ? "Approvado" : "Rechazado"));
+            Console.WriteLine("\nPréstamo para: " + customer.Name +
+                ", ha sido " + (eligible ? "Aprobado" : "Rechazado"));
             
             Console.ReadKey();
         }
